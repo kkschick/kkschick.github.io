@@ -123,6 +123,11 @@ header.navigation {
         color: $navigation-color-hover;
       }
     }
+
+    img {
+      max-height: $navigation-height;
+      padding: 0.5em;
+    }
   }
 
   .active-nav-item a {
@@ -131,12 +136,31 @@ header.navigation {
   }
 
   .right-nav {
-    float: right;
+    background: $navigation-background;
+    display: none;
+    line-height: $navigation-height;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
     a {
-    	padding: 0em;
+    padding-right: 0em;
+
+      img {
+      max-height: 60px;
+      }
+    }
+    @include media ($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height;
+      text-decoration: none;
+      width: auto;
+      float: right;
+      padding: 0em;
     }
   }
-
 }
 
 .hero {
@@ -247,13 +271,18 @@ header.navigation {
           max-width: 60%;
         }
       }
+      a {
+        img {
+        height: 50px;
+        }
+      }
     }
   }
 }
 
 .resume {
 	color: #031634;
-	padding: 2em 10em;
+	padding: 2em 2em;
 	font-family: 'Source Sans Pro', sans-serif;
 
 	h1, h2, h3, h4, h5, h6 {
@@ -272,6 +301,9 @@ header.navigation {
 	.resume-header {
 		text-align: center;
 	}
+  @include media ($large-screen) {
+      padding: 2em 10em;
+  }
 }
 
 footer {

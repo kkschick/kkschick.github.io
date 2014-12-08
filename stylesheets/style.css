@@ -329,13 +329,34 @@ header.navigation {
           padding-right: 1em; } }
       header.navigation ul li.nav-link a:hover {
         color: white; }
+    header.navigation ul li.nav-link img {
+      max-height: 60px;
+      padding: 0.5em; }
   header.navigation .active-nav-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
   header.navigation .right-nav {
-    float: right; }
+    background: #031634;
+    display: none;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
     header.navigation .right-nav a {
-      padding: 0em; }
+      padding-right: 0em; }
+      header.navigation .right-nav a img {
+        max-height: 60px; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .right-nav {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto;
+        float: right;
+        padding: 0em; } }
 
 .hero {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(10deg, #036564, #036564), no-repeat #036564 scroll;
@@ -429,10 +450,12 @@ header.navigation {
           .hero-large .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 60%; } }
+      .hero-large .hero-inner .hero-copy a img {
+        height: 50px; }
 
 .resume {
   color: #031634;
-  padding: 2em 10em;
+  padding: 2em 2em;
   font-family: 'Source Sans Pro', sans-serif; }
   .resume h1, .resume h2, .resume h3, .resume h4, .resume h5, .resume h6 {
     font-family: 'Playfair Display', serif;
@@ -443,6 +466,9 @@ header.navigation {
     color: rgba(3, 22, 52, 0.5); }
   .resume .resume-header {
     text-align: center; }
+  @media screen and (min-width: 53.75em) {
+    .resume {
+      padding: 2em 10em; } }
 
 footer {
   background-color: #031634;
