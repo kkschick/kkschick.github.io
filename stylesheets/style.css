@@ -537,18 +537,18 @@ footer {
         background-position: top;
         background-size: cover; }
     .grid-items .grid-item:nth-child(4) {
-      background-color: #CDB380;
-      box-shadow: inset 0px 0px 1px 2px #bf9d5b; }
+      background-color: #033649;
+      box-shadow: inset 0px 0px 1px 2px #011218; }
       .grid-items .grid-item:nth-child(4):hover {
-        background-color: #bf9d5b;
+        background-color: #011218;
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover; }
     .grid-items .grid-item:nth-child(5) {
-      background-color: #033649;
-      box-shadow: inset 0px 0px 1px 2px #011218; }
+      background-color: #CDB380;
+      box-shadow: inset 0px 0px 1px 2px #bf9d5b; }
       .grid-items .grid-item:nth-child(5):hover {
-        background-color: #011218;
+        background-color: #bf9d5b;
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover; }
