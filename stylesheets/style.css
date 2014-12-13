@@ -253,7 +253,7 @@ header.navigation {
     z-index: 9999;
     margin-left: 1em;
     margin-right: 1em;
-    max-width: 80em; }
+    max-width: 100%; }
     header.navigation .navigation-wrapper:after {
       content: "";
       display: table;
