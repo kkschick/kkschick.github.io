@@ -277,6 +277,14 @@ header.navigation {
         height: 50px;
         }
       }
+      a {
+        color: #CDB380;
+        text-decoration: strong;
+      }
+      a:hover {
+        color: $hero-color;
+        text-decoration: none;
+      }
     }
   }
 }
