@@ -250,6 +250,12 @@ header.navigation {
     .hero-copy {
       text-align: center;
       padding-top: 2em;
+
+      ul {
+        @extend %default-ul;
+        text-align: left;
+        padding: 0% 20% 0% 20%;
+      }
       h1 {
         font-size: 1.6em;
         margin-bottom: .5em;
@@ -263,7 +269,7 @@ header.navigation {
       p {
         font-family: $sans-serif;
         margin: auto;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
         font-weight: 200;
         line-height: 1.4em;
 
