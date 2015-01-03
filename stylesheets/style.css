@@ -403,6 +403,8 @@ header.navigation {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }
+      .hero .hero-inner .hero-copy ul li img {
+        padding: 0% 10% 0% 10%; }
 
 .hero-large {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(10deg, #036564, #036564), no-repeat #036564 scroll;
