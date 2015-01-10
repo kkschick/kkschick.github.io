@@ -11,44 +11,106 @@
         <script src="jquery/dist/jquery.min.js"></script>
         <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
         <link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js" type="text/javascript"></script>
         <script src="index.js" type="text/javascript"></script>
     </head>
 
-    <body>
-        <header class="navigation">
-          <div class="navigation-wrapper">
-            <a href="/" class="logo">
-              <img src="img/logo.png">
-            </a>
-            <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-            <div class="nav">
-              <ul id="navigation-menu">
-                <li class="nav-link"><a href="/">Katie Schick</a></li>
-                <li class="nav-link"><a href="about.html">About</a></li>
-                <li class="nav-link"><a href="resume.html">Resume</a></li>
-                <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav-link"><a href="http://kkschick.wordpress.com/" target="_blank">Blog</a></li>
-              </ul>
-            </div>
-            <div class="right-nav">
-                <a href="mailto:kkschick@gmail.com" target="_blank" class="logo"><img src="img/email.png"></a>
-                <a href="https://www.linkedin.com/in/kkschick/" target="_blank" class="logo"><img src="img/linkedin.png"></a>
-                <a href="https://www.github.com/kkschick/" target="_blank" class="logo"><img src="img/github.png"></a>
-                <a href="https://www.twitter.com/kkschick/" target="_blank" class="logo"><img src="img/twitter.png"></a>
-            </div>
-        </header>
+    <body ng-app="dadApp">
 
         <div class="hero">
             <div class="hero-inner">
                 <div class="hero-copy">
-                    <h1>Happy Birthday, Dad!</h1>
-
+                    <h1>HAPPY BIRTHDAY, DAD!</h1>
+                    <p>Click on a year!</p>
+                    <ul class="dad-list">
+                        <li><a href="" class="white-link" ng-click="click1=!click1"><h1>1988</h1></a></li>
+                            <img src="img/dad/1988.jpg" ng-show="click1">
+                            <p ng-show="click1">I don't remember much about this year of my life, but I bet it was a pretty good one. Thanks for the great genes!</p>
+                        <li><a href="" class="white-link" ng-click="click2=!click2"><h1>1989</h1></a></li>
+                            <img src="img/dad/1989.jpg" ng-show="click2">
+                            <p ng-show="click2">Thank you for teaching me to read and for reading to me constantly, even after I could do it myself. I loved falling asleep to the sound of Heidi, or a Greek myth.</p>
+                        <li><a href="" class="white-link" ng-click="click3=!click3"><h1>1990</h1></a></li>
+                            <img src="img/dad/1990.jpg" ng-show="click3">
+                            <p ng-show="click3">Thank you for giving me a lifelong love of ice cream and other sweet treats. It has served me well.</p>
+                        <li><a href="" class="white-link" ng-click="click4=!click4"><h1>1991</h1></a></li>
+                            <img src="img/dad/1991.jpg" ng-show="click4">
+                            <p ng-show="click4">Thank you for tirelessly and relentlessly teaching me how to play the piano. Even though I was not always the most receptive student, I am so grateful for this lifelong skill that brings me so much joy.</p>
+                        <li><a href="" class="white-link" ng-click="click5=!click5"><h1>1992</h1></a></li>
+                            <img src="img/dad/1992.jpg" ng-show="click5">
+                            <p ng-show="click5">Thank you for always being game for throwing me around in a refrigerator box. That was probably the most fun I'll ever have. I can still remember the feeling of scrambling down into the box and being rocked around.</p>
+                        <li><a href="" class="white-link" ng-click="click6=!click6"><h1>1993</h1></a></li>
+                            <img src="img/dad/1993.jpg" ng-show="click6">
+                            <p ng-show="click6">Thank you for being my first (and best) manicurist.</p>
+                        <li><a href="" class="white-link" ng-click="click7=!click7"><h1>1994</h1></a></li>
+                            <img src="img/dad/1994.jpg" ng-show="click7">
+                            <p ng-show="click7">Thank you for letting me think I was a mermaid you and Mom found on the beach, and for indulging me in so many other fantasies/games of make-believe.</p>
+                        <li><a href="" class="white-link" ng-click="click8=!click8"><h1>1995</h1></a></li>
+                            <img src="img/dad/1995.jpg" ng-show="click8">
+                            <p ng-show="click8">Thank you for teaching me about creativity and never letting anything go to waste. I'll never forget how fun it was when you used the extra Easter egg dye to dye our pasta. Emily and I still talk about that memory.</p>
+                        <li><a href="" class="white-link" ng-click="click9=!click9"><h1>1996</h1></a></li>
+                            <img src="img/dad/1996.jpg" ng-show="click9">
+                            <p ng-show="click9">Thank you for making sure that I was always safe. Even though kids made fun of my wrist and knee pads, I knew they were just jealous because they wished their dads cared that much about their safety.</p>
+                        <li><a href="" class="white-link" ng-click="click10=!click10"><h1>1997</h1></a></li>
+                            <img src="img/dad/1997.jpg" ng-show="click10">
+                            <p ng-show="click10">Thank you for all those father-daughter trips to Yosemite. I loved staying at Yosemite Lodge and doing watercolors with you. I really appreciated the opportunity to feel like an only child again, to help ease the transition to older-sisterhood.</p>
+                        <li><a href="" class="white-link" ng-click="click11=!click11"><h1>1998</h1></a></li>
+                            <img src="img/dad/1998.jpg" ng-show="click11">
+                            <p ng-show="click11">Thank you for making behavioral challenges fun and colorful!</p>
+                        <li><a href="" class="white-link" ng-click="click12=!click12"><h1>1999</h1></a></li>
+                            <img src="img/dad/1999.jpg" ng-show="click12">
+                            <p ng-show="click12">Thank you for teaching me how to use tools and build things and to be curious about how machines work.</p>
+                        <li><a href="" class="white-link" ng-click="click13=!click13"><h1>2000</h1></a></li>
+                            <img src="img/dad/2000.jpg" ng-show="click13">
+                            <p ng-show="click13">Thank you for being so interested in Korean culture and thereby helping me feel connected to my heritage. You (and Mom, of course!) make me proud to be half Korean. (I'm pretty sure we had more fun on this trip than this picture would indicate...)</p>
+                        <li><a href="" class="white-link" ng-click="click14=!click14"><h1>2001</h1></a></li>
+                            <img src="img/dad/2001.jpg" ng-show="click14">
+                            <p ng-show="click14">Thank you for letting me get a gross rodent pet and for spending four days helping me find him when he escaped, even though he was a gross rodent pet.</p>
+                        <li><a href="" class="white-link" ng-click="click15=!click15"><h1>2002</h1></a></li>
+                            <img src="img/dad/2002.jpg" ng-show="click15">
+                            <p ng-show="click15">Thank you for documenting our lives so well, so that we have all these pictures and videos to look back at. Going through all these pictures has reminded me just how lucky I was and am. I had the happiest childhood.</p>
+                        <li><a href="" class="white-link" ng-click="click16=!click16"><h1>2003</h1></a></li>
+                            <img src="img/dad/2003.jpg" ng-show="click16">
+                            <p ng-show="click16">Thank you for teaching me the appropriate way to pose for a portrait.</p>
+                        <li><a href="" class="white-link" ng-click="click17=!click17"><h1>2004</h1></a></li>
+                            <img src="img/dad/2004.jpg" ng-show="click17">
+                            <p ng-show="click17">Thank you for continually demonstrating proper prank-playing technique.</p>
+                        <li><a href="" class="white-link" ng-click="click18=!click18"><h1>2005</h1></a></li>
+                            <img src="img/dad/2005.jpg" ng-show="click18">
+                            <p ng-show="click18">Thank you for challenging me to take the more difficult path (even if it meant crossing a tiny, muddy bridge where I might fall to my doom) because that's how you keep learning.</p>
+                        <li><a href="" class="white-link" ng-click="click19=!click19"><h1>2006</h1></a></li>
+                            <img src="img/dad/2006.jpg" ng-show="click19">
+                            <p ng-show="click19">Thank you for modeling proper sun protection, even at serious events, such as my high school graduation.</p>
+                        <li><a href="" class="white-link" ng-click="click20=!click20"><h1>2007</h1></a></li>
+                            <img src="img/dad/2007.jpg" ng-show="click20">
+                            <p ng-show="click20">Again, with the proper portrait technique, especially when posing with a significant other.</p>
+                        <li><a href="" class="white-link" ng-click="click21=!click21"><h1>2008</h1></a></li>
+                            <img src="img/dad/2008.jpg" ng-show="click21">
+                            <p ng-show="click21">Thank you for visiting me so many times in college and coming to so many of my performances. Also for making me awkwardly pose with strollers at Peabody Terrace!</p>
+                        <li><a href="" class="white-link" ng-click="click22=!click22"><h1>2009</h1></a></li>
+                            <img src="img/dad/2009.jpg" ng-show="click22">
+                            <p ng-show="click22">Thank you for buying me my first drink!</p>
+                        <li><a href="" class="white-link" ng-click="click23=!click23"><h1>2010</h1></a></li>
+                            <img src="img/dad/2010.jpg" ng-show="click23">
+                            <p ng-show="click23">Thank you for teaching me to love solving puzzles and to believe that I could be good at anything if I worked hard. Without that, I never would have had the courage to do Hackbright.</p>
+                        <li><a href="" class="white-link" ng-click="click24=!click24"><h1>2011</h1></a></li>
+                            <img src="img/dad/2011.jpg" ng-show="click24">
+                            <p ng-show="click24">Thank you for all the trips to Hawaii over the years. I am so lucky to have been able to spend so much time in paradise.</p>
+                        <li><a href="" class="white-link" ng-click="click25=!click25"><h1>2012</h1></a></li>
+                            <img src="img/dad/2012.jpg" ng-show="click25">
+                            <p ng-show="click25">Thank you for reminding me to never, ever take myself too seriously. I will never be too cool or too old to be totally goofy.</p>
+                        <li><a href="" class="white-link" ng-click="click26=!click26"><h1>2013</h1></a></li>
+                            <img src="img/dad/2013.jpg" ng-show="click26">
+                            <p ng-show="click26">Thank you for spending so much time flying across the country to visit me. I am always so excited to have you visit and spend some quality father-daughter time.</p>
+                        <li><a href="" class="white-link" ng-click="click27=!click27"><h1>2014</h1></a></li>
+                            <img src="img/dad/2014.jpg" ng-show="click27">
+                            <p ng-show="click27">Thank you for being the best father, role model, and muddy buddy. I am so glad and grateful to be part of this family.</p>
+                    </ul>
                 </div>
             </div>
         </div>
     </body>
     <footer>
-        <p>Copyright 2014. Created by Katie Schick using <a href="http://bourbon.io/" target="_blank">Bourbon.</a></p>
+        <p>Copyright 2015. Created by Katie Schick using <a href="http://bourbon.io/" target="_blank">Bourbon.</a></p>
     </footer>
 </html>
 <script>

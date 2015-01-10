@@ -15,13 +15,7 @@ $(document).ready(function() {
     mode: 'fade',
     captions: true
   });
-  // underline under the active nav item
-  // $(".nav .nav-link").click(function() {
-  //   $(".nav .nav-link").each(function() {
-  //     $(this).removeClass("active-nav-item");
-  //   });
-  //   $(this).addClass("active-nav-item");
-  //   $(".nav .more").removeClass("active-nav-item");
-  // });
+
 });
 
+var app = angular.module('dadApp', []);
