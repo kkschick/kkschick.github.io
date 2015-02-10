@@ -193,7 +193,14 @@ header.navigation {
 
     .hero-copy {
       text-align: center;
-
+      a {
+        color: #CDB380;
+        text-decoration: strong;
+      }
+      a:hover {
+        color: $hero-color;
+        text-decoration: none;
+      }
       h1 {
         font-size: 1.6em;
         margin-bottom: .5em;

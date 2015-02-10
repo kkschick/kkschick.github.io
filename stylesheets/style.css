@@ -386,6 +386,12 @@ header.navigation {
       clear: both; }
     .hero .hero-inner .hero-copy {
       text-align: center; }
+      .hero .hero-inner .hero-copy a {
+        color: #CDB380;
+        text-decoration: strong; }
+      .hero .hero-inner .hero-copy a:hover {
+        color: white;
+        text-decoration: none; }
       .hero .hero-inner .hero-copy h1 {
         font-size: 1.6em;
         margin-bottom: .5em;
