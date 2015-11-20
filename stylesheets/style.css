@@ -361,7 +361,7 @@ header.navigation {
         padding: 0em; } }
 
 .hero {
-  height: 100%;
+  height: 86%;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(10deg, #036564, #036564), no-repeat #036564 scroll;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #036564, #036564), no-repeat #036564 scroll;
   background-repeat: no-repeat;
